@@ -10,7 +10,7 @@ if nota >= 6.0:
     status = "aprovado"
 else: 
     status = "reprovado"
-if nota < 0 and nota > 10: 
+if nota < 0 or nota > 10: 
     print("Nota inválida. Tente novamente")
 else: 
     print(f"Nota válida. {nome} está {status} em {disciplina} com nota {nota}")
